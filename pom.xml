@@ -12,7 +12,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <start-class>com.vdenotaris.spring.boot.security.saml.web.Application</start-class>
+        <start-class>com.spring.boot.security.saml.Application</start-class>
         <jackson.version>2.13.0</jackson.version>
 		<log4j2.version>2.17.0</log4j2.version>
     </properties>
