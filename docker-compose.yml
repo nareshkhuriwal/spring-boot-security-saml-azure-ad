@@ -19,7 +19,7 @@ services:
     networks:
       - springmysql-net
     depends_on:
-      - mysqldb
+      - linkmygoodsapi_mysqldb
 
 networks:
   spring-mysql-net:
