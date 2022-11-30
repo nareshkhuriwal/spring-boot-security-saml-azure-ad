@@ -1,0 +1,33 @@
+server:
+    port: 8443
+    ssl:
+      enabled: true
+      key-store: classpath:saml/samlKeystore.jks
+      key-store-password: nalle123
+    servlet:
+      context-path: /
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          saml: DEBUG
+      opensaml: DEBUG
+    com:
+      spring:
+        boot:
+          security:
+            saml: DEBUG
+
+spring.main.allow-circular-references: true
+
+service.provider.entity.id: com:kgf:spring:sp
+idp.metedata.url: https://login.microsoftonline.com/095d5b65-7e5f-480e-8cb1-0c4d79cc9bae/federationmetadata/2007-06/federationmetadata.xml?appid=b7667384-af91-4b8a-8001-70f85cb51eff
+
+# you can update credentials if you want, I recommend you to keep as it is for demo purpose
+saml:
+  keystore.password: nalle123
+  private.key:
+    alias: apollo
+    password: nalle123

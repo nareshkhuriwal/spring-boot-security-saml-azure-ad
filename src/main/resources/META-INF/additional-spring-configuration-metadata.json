@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "service.provider.entity.id",
+    "type": "java.lang.String",
+    "description": "A description for 'service.provider.entity.id'"
+  },
+  {
+    "name": "idp.metedata.url",
+    "type": "java.lang.String",
+    "description": "A description for 'idp.metedata.url'"
+  }
+]}
