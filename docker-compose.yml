@@ -1,25 +1,11 @@
 version: "3"
 services:
-  linkmygoodsapi_mysqldb:
-    image: mysql:5.7
-    networks:
-      - spring-mysql-net
-    environment:
-      - MYSQL_ROOT_PASSWORD=1234
-      - MYSQL_DATABASE=test
-      - MYSQL_USER=sa
-      - MYSQL_PASSWORD=1234
-
   linkmygoodsapi_server:
     image: linkmygoodsapi:latest
     ports:
       - "8443:8443"
-    environment:
-      - spring.datasource.url=jdbc:mysql://linkmygoodsapi_mysqldb:3306/test?useSSL=false
     networks:
       - spring-mysql-net
-    depends_on:
-      - linkmygoodsapi_mysqldb
 
 networks:
   spring-mysql-net:
