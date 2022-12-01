@@ -2,7 +2,7 @@ server:
     port: 8443
     ssl:
       enabled: true
-      key-store: classpath:saml/keystore.jks
+      key-store: classpath:saml/samlKeystore.jks
       key-store-password: nalle123
     servlet:
       context-path: /
